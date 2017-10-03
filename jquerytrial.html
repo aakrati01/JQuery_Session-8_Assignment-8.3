@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tooltip example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--........... Including bootstrap and jQuery............... -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+		/*......... On hovering on input It will display on right..........*/
+
+		$(document).ready(function(){
+			$("#Name").tooltip({
+				placement:'right'
+			});
+			$("#email").tooltip({
+				placement:'right'
+			});
+			$("#Pswrd").tooltip({
+				placement:'right'
+			});
+		});
+	</script>
+
+	<!--......... Styling the div.......-->
+
+	<style type="text/css">
+
+		.container{
+			padding: 20px;
+		}
+		label{
+			padding: 10px;
+		}
+
+	</style>
+
+	
+</head>
+<body>
+	<!--..... heading on the page ...........-->
+	<h1>FORM with Tooltip example</h1>
+	<div class="container">
+		<!--........... Input Labels.......... -->
+		<label>User-Name :
+		<input id="Name" data-toggle="tooltip" title="Enter User-Name">
+		</label><br/>
+		<label>Email-ID :
+		<input id="email" data-toggle="tooltip" title="Please enter your email id">
+		</label><br/>
+		<label>Password :
+		<input id="Pswrd" data-toggle="tooltip" title="Input a password with
+		nter password that must be 
+		(i)6-24 characters long 
+ 		(ii)Must contain a number 
+ 		(iii)Must contain a capital letter">
+ 		</label><br/>
+	</div>
+		
+</body>
+</html>		
